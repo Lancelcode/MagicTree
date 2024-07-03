@@ -10,6 +10,7 @@ public class Tree {
         this.trunkDiameterCm = trunkDiameterCm;
         this.treeType = treeType;
     }
+
     void Grow() {
         this.hightMeters = this.hightMeters + 10;
         this.trunkDiameterCm = this.trunkDiameterCm + 1;
