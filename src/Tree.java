@@ -1,8 +1,11 @@
+import java.awt.*;
+
 public class Tree {
     double hightMeters;
     double ageYears;
     double trunkDiameterCm;
     TreeType treeType;
+    static Color TRUNK_COLOR = new Color(102, 51, 0);
 
     Tree (double hightMeters, double ageYears, double trunkDiameterCm, TreeType treeType) {
         this.hightMeters = hightMeters;
@@ -17,6 +20,10 @@ public class Tree {
         this.ageYears = this.ageYears+ 1;
     }
 
+    static void callATree() {
+        System.out.println("Soy un arbol de color " + TRUNK_COLOR + " !");
+    }
+
     void CallTallTree() {
         if(this.hightMeters > 20)
         {
@@ -24,4 +31,3 @@ public class Tree {
         }
     }
 }
-
